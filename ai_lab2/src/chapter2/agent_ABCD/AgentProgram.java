@@ -10,7 +10,11 @@ public class AgentProgram {
 		}else if(p.getAgentLocation().equals("A")) {
 			return new DynamicAction("RIGHT");
 		}else if(p.getAgentLocation().equals("B")) {
+			return new DynamicAction("DOWN");
+		}else if(p.getAgentLocation().equals("C")) {
 			return new DynamicAction("LEFT");
+		}else if(p.getAgentLocation().equals("D")) {
+			return new DynamicAction("UP");
 		}
 		return NoOpAction.NO_OP;
 		

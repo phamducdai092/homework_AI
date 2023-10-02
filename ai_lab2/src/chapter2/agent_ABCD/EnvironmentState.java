@@ -12,6 +12,8 @@ public class EnvironmentState {
 	public EnvironmentState(Environment.LocationState locAState, Environment.LocationState locBState) {
 		this.state.put(Environment.LOCATION_A, locAState);
 		this.state.put(Environment.LOCATION_B, locBState);
+		this.state.put(Environment.LOCATION_C, locBState);
+		this.state.put(Environment.LOCATION_D, locBState);
 	}
 
 	public void setAgentLocation(String location) {

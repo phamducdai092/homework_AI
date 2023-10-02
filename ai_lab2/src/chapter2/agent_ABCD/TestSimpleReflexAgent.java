@@ -6,6 +6,6 @@ public class TestSimpleReflexAgent {
 		Agent agent = new Agent(new AgentProgram());
 		env.addAgent(agent, Environment.LOCATION_A);
 
-		env.step(3);
+		env.step(6);
 	}
 }
