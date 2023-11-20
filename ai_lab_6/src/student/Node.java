@@ -51,12 +51,9 @@ public class Node {
 
 	public List<Node> generateAllCandidates() {
 		List<Node> result = new ArrayList<Node>();
-		int i = 0;
-		while (i < N) {
-			Node temp = new Node(this.state);
-			temp.state[i].move();
-			result.add(temp);
-			i++;
+		for (int i = 0; i < N; i++) {
+			Node node = new Node(this.state);
+			node.state[i].move();
 		}
 		return result;
 	}
